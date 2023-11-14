@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: rgb(230, 240, 240);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#input-div {
+    display: flex;
+    height: 40px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#search-input {
+    width: 88%;
+    height: 100%;
+    padding: 2px;
+    padding-left: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search-button {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    padding: 1px;
+    transition: .2s;
+}
+
+
+#search-button:hover {
+    cursor: pointer;
+}
+
+#search-button>svg {
+    fill: rgb(41, 39, 39);
+    transition: .2s;
+}
+
+#search-button:hover>svg {
+    transform: scale(1.1);
+}
+
+#search-button:active {
+    background-color: rgb(224, 222, 222);
+}
+
+#start-div {
+    text-align: center;
+}
+
+#start-image {
+    width: 128px;
+    height: 128px;
+}
+
+#start-text {
+    font-size: 20px;
+    color: rgb(107, 104, 104);
+}
+
+#books {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.book-div {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.book {
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .2s;
+}
+
+.book:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.book>img {
+    width: 129px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .book {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    .book {
+        width: 100%;
+    }
+
+    .book-div {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    #input-div {
+        width: 98%;
+    }
+}
